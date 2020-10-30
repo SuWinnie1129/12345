@@ -1,0 +1,173 @@
+.frame{
+    width: 360px;
+    height: 620px;
+    display: inline-block;
+    background-color: black;
+    border-style: solid;
+    border-radius: 15%;
+    
+}
+.camera{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    display: inline-block;
+    margin: 5px 10px -10px 170px;
+}
+.screenframe{
+    width: 300px;
+    height: 500px;
+    display: inline-block;
+    margin: 35px 5px 50px 30px;
+}
+.wallpaper{
+    max-width: 320px;
+    background-image: url(../img/wallpaper.jpg);
+    background-size: cover;
+    background-position-x: center;
+}
+
+td{
+    color: white;
+    font-size: 12px;
+    font-weight: lighter;
+    font-family: '微軟正黑體';
+    text-align: center;
+    
+}
+.rounded-rectangle{
+    width: 45px;
+    height: 45px;
+    border-radius: 42%;
+    display: inline-block;
+    margin-left: 3px;
+    margin-top: 15px;
+}
+
+.ksd{
+    max-width: 50px;
+    max-height: 50px;
+    background-image: url(../img/KSD.jpg);
+    background-size: cover;     /*讓圖片填滿&配合限制大小*/
+    background-position: center;
+}
+.gmail{
+    max-width: 50px;
+    max-height: 50px;
+    background-image: url(../img/gmail.png);
+    background-size: cover;     
+    background-position: center;
+}
+.netflix{
+    max-width: 50px;
+    max-height: 50px;
+    background-image: url(../img/netflix.png);
+    background-size: cover;     
+    background-position: center;
+}
+.youtube{
+    max-width: 50px;
+    max-height: 50px;
+    background-image: url(../img/youtube.png);
+    background-size: cover;     
+    background-position: center;
+}
+.bilibili{
+    max-width: 50px;
+    max-height: 50px;
+    background-image: url(../img/bilibili.jpg);
+    background-size: cover;     
+    background-position: center;
+}
+.linkedin{
+    max-width: 50px;
+    max-height: 50px;
+    background-image: url(../img/LinkedInicon.png);
+    background-size: cover;     
+    background-position: center;
+}
+.chrome{
+    max-width: 50px;
+    max-height: 50px;
+    background-image: url(../img/chrome.jpg);
+    background-size: cover;     
+    background-position: center;
+}
+.lativ{
+    max-width: 50px;
+    max-height: 50px;
+    background-image: url(../img/lativ.png);
+    background-size: cover;     
+    background-position: center;
+}
+.queenshop{
+    max-width: 50px;
+    max-height: 50px;
+    background-image: url(../img/queenshop.png);
+    background-size: cover;     
+    background-position: center;
+}
+.shopee{
+    max-width: 50px;
+    max-height: 50px;
+    background-image: url(../img/shopee.png);
+    background-size: cover;     
+    background-position: center;
+}
+.facebook{
+    max-width: 50px;
+    max-height: 50px;
+    background-image: url(../img/facebook.png);
+    background-size: cover;     
+    background-position: center;
+}
+.instagram{
+    max-width: 50px;
+    max-height: 50px;
+    background-image: url(../img/ig.jpg);
+    background-size: cover;     
+    background-position: center;
+}
+.messenger{
+    max-width: 50px;
+    max-height: 50px;
+    background-image: url(../img/messenger.jpg);
+    background-size: cover;     
+    background-position: center;
+}
+.line{
+    max-width: 50px;
+    max-height: 50px;
+    background-image: url(../img/line.jpg);
+    background-size: cover;     
+    background-position: center;
+}
+.kkbox{
+    max-width: 50px;
+    max-height: 50px;
+    background-image: url(../img/kkbox.png);
+    background-size: cover;     
+    background-position: center;
+}
+.dot{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.781);
+    display: inline-block;
+    background-position: center;
+}
+
+.dot-position{
+    margin-left: 120px;
+}
+.button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    display: inline-block;
+    margin: -35px 20px 20px 150px;
+    
+}
