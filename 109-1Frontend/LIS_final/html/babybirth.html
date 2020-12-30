@@ -1,0 +1,427 @@
+\<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Directing Template">
+    <meta name="keywords" content="Directing, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>有禮真好--禮物選購指南網站</title>
+    <link rel="shortcut icon" type="image/icon" href="../img/gift_icon.png">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="../css/flaticon.css" type="text/css">
+    <link rel="stylesheet" href="../css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="../css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="../css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/bootsnav.css" >	
+    <link rel="stylesheet" href="../css/animate.css">
+</head>
+
+<body background="../img/back_color4.jpeg">
+<!-- Header Section Begin -->
+<header class="top-area">
+    <div class="header-area">
+        <!-- Start Navigation -->
+        <nav class="navbar navbar-default bootsnav navbar-fixed dark no-background">
+            <div class="container">
+                <!-- Start Header Navigation-->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                <a class="navbar-brand" href="../html/index.html"><img src="../img/icon/home.png"></a>
+                <a class="navbar-brand" href="../html/index.html">HOME</a>
+                </div><!-- /.navbar-header-->
+                <!-- Collect the nav links, forms, and other content for toggling -->
+			            <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
+			                <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+			                <li class=" smooth-menu active"></li>
+                                <li class="smooth-menu"><a href="../html/motherday.html">mother's day</a></li>
+                                <li class="smooth-menu"><a href="../html/fatherday.html">father's day</a></li>
+                                <li class="smooth-menu"><a href="../html/christmas.html">christmas</a></li>
+			                    <li class="smooth-menu"><a href="../html/birthday.html">birthday</a></li>
+                                <li class="smooth-menu"><a href="../html/anniversary.html">anniversary/valentine's</a></li>
+			                </ul><!--/.nav -->
+			            </div><!-- /.navbar-collapse -->
+                <!-- End Header Navigation-->
+            </div>
+        </nav>
+    </div>
+</header>
+<!-- Header Section End -->
+<div class="ov-hid">
+    <!-- Filter Begin -->
+    <form class="filter" onsubmit="return false">
+        <div class="filter__title">
+            <h5>Filter</h5>
+        </div>
+        <div class="filter__select">
+            <select id="budget">
+                <option value="">Budget</option>
+                <option value="200以下">200以下</option>
+                <option value="201~400">201~400</option>
+                <option value="401~600">401~600</option>
+                <option value="601~800">601~800</option>
+                <option value="801~1000">801~1000</option>
+                <option value="1001~1500">1001~1500</option>
+                <option value="1501~2000">1501~2000</option>
+                <option value="2000以上">2000以上</option>
+            </select>
+        </div>
+    
+        <div class="filter__btns">
+            <button onclick="operation(1)">搜尋 Search</button>
+        </div>
+    </form>
+    <!-- Filter End -->
+
+    <!-- Listing Section Begin -->
+    <section class="listing">
+            <div class="listing__text__top">
+                <div class="listing__text__top__left">
+                    <h5>為您準備的禮物指南!</h5>
+                </div>
+            </div>
+            <div class="listing_list">
+                <div class="gift-list" id="gift-list_0">
+                    <div class="listing__item">
+                        <div class="listing__item__pic" id="listing__item__pic_0">
+                            <div class="listing__item__pic__tag">Full Moon</div> 
+                        </div>
+                        <div class="listing__item__text">
+                            <div class="listing__item__text__inside" id="listing__item__text__inside_0">
+                                <div class="listing__item__text__rating" id="listing__item__text__rating_0">
+                                </div>
+                            </div>
+                            <div class="listing__item__text__info">
+                                <div class="listing__item__text__info__left" id="listing__item__text__info__left_0">
+                                    <img src="../img/icon/people.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+                <div class="gift-list" id="gift-list_1">
+                    <div class="listing__item">
+                        <div class="listing__item__pic" id="listing__item__pic_1" >
+                            <div class="listing__item__pic__tag">Full Moon</div> 
+                        </div>
+                        <div class="listing__item__text">
+                            <div class="listing__item__text__inside" id="listing__item__text__inside_1">
+                                <div class="listing__item__text__rating" id="listing__item__text__rating_1">
+                                </div>
+                            </div>
+                            <div class="listing__item__text__info">
+                                <div class="listing__item__text__info__left" id="listing__item__text__info__left_1">
+                                    <img src="../img/icon/people.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+            <div class="listing_list">
+                <div class="gift-list" id="gift-list_2">
+                    <div class="listing__item">
+                        <div class="listing__item__pic" id="listing__item__pic_2">
+                            <div class="listing__item__pic__tag">Full Moon</div> 
+                        </div>
+                        <div class="listing__item__text">
+                            <div class="listing__item__text__inside" id="listing__item__text__inside_2">
+                                <div class="listing__item__text__rating" id="listing__item__text__rating_2">
+                                </div>
+                            </div>
+                            <div class="listing__item__text__info">
+                                <div class="listing__item__text__info__left" id="listing__item__text__info__left_2">
+                                    <img src="../img/icon/people.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+                <div class="gift-list" id="gift-list_3">
+                    <div class="listing__item">
+                        <div class="listing__item__pic" id="listing__item__pic_3">
+                            <div class="listing__item__pic__tag">Full Moon</div> 
+                        </div>
+                        <div class="listing__item__text">
+                            <div class="listing__item__text__inside" id="listing__item__text__inside_3">
+                                <div class="listing__item__text__rating" id="listing__item__text__rating_3">
+                                </div>
+                            </div>
+                            <div class="listing__item__text__info">
+                                <div class="listing__item__text__info__left" id="listing__item__text__info__left_3">
+                                    <img src="../img/icon/people.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+            <div class="listing_list">
+                <div class="gift-list" id="gift-list_4">
+                    <div class="listing__item">
+                        <div class="listing__item__pic" id="listing__item__pic_4">
+                            <div class="listing__item__pic__tag">Full Moon</div> 
+                        </div>
+                        <div class="listing__item__text">
+                            <div class="listing__item__text__inside" id="listing__item__text__inside_4">
+                                <div class="listing__item__text__rating" id="listing__item__text__rating_4">
+                                </div>
+                            </div>
+                            <div class="listing__item__text__info">
+                                <div class="listing__item__text__info__left" id="listing__item__text__info__left_4">
+                                    <img src="../img/icon/people.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+                <div class="gift-list" id="gift-list_5">
+                    <div class="listing__item">
+                        <div class="listing__item__pic" id="listing__item__pic_5">
+                            <div class="listing__item__pic__tag">Full Moon</div> 
+                        </div>
+                        <div class="listing__item__text">
+                            <div class="listing__item__text__inside" id="listing__item__text__inside_5">
+                                <div class="listing__item__text__rating" id="listing__item__text__rating_5">
+                                </div>
+                            </div>
+                            <div class="listing__item__text__info">
+                                <div class="listing__item__text__info__left" id="listing__item__text__info__left_5">
+                                    <img src="../img/icon/people.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+                </div>   
+            </div> 
+            <div class="listing_list">
+                <div class="gift-list" id="gift-list_6">
+                    <div class="listing__item">
+                        <div class="listing__item__pic" id="listing__item__pic_6">
+                            <div class="listing__item__pic__tag">Full Moon</div> 
+                        </div>
+                        <div class="listing__item__text">
+                            <div class="listing__item__text__inside" id="listing__item__text__inside_6">
+                                <div class="listing__item__text__rating" id="listing__item__text__rating_6">
+                                </div>
+                            </div>
+                            <div class="listing__item__text__info">
+                                <div class="listing__item__text__info__left" id="listing__item__text__info__left_6">
+                                    <img src="../img/icon/people.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+                <div class="gift-list" id="gift-list_7">
+                    <div class="listing__item">
+                        <div class="listing__item__pic" id="listing__item__pic_7">
+                            <div class="listing__item__pic__tag">AFull Moon</div> 
+                        </div>
+                        <div class="listing__item__text">
+                            <div class="listing__item__text__inside" id="listing__item__text__inside_7">
+                                <div class="listing__item__text__rating" id="listing__item__text__rating_7">
+                                </div>
+                            </div>
+                            <div class="listing__item__text__info">
+                                <div class="listing__item__text__info__left" id="listing__item__text__info__left_7">
+                                    <img src="../img/icon/people.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+                </div>   
+            </div>
+            <div class="listing_list">
+                <div class="gift-list" id="gift-list_8">
+                    <div class="listing__item">
+                        <div class="listing__item__pic" id="listing__item__pic_8">
+                            <div class="listing__item__pic__tag">Full Moon</div> 
+                        </div>
+                        <div class="listing__item__text">
+                            <div class="listing__item__text__inside" id="listing__item__text__inside_8">
+                                <div class="listing__item__text__rating" id="listing__item__text__rating_8">
+                                </div>
+                            </div>
+                            <div class="listing__item__text__info">
+                                <div class="listing__item__text__info__left" id="listing__item__text__info__left_8">
+                                    <img src="../img/icon/people.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+                <div class="gift-list" id="gift-list_9">
+                    <div class="listing__item">
+                        <div class="listing__item__pic" id="listing__item__pic_9">
+                            <div class="listing__item__pic__tag">Full Moon</div> 
+                        </div>
+                        <div class="listing__item__text">
+                            <div class="listing__item__text__inside" id="listing__item__text__inside_9">
+                                <div class="listing__item__text__rating" id="listing__item__text__rating_9">
+                                </div>
+                            </div>
+                            <div class="listing__item__text__info">
+                                <div class="listing__item__text__info__left" id="listing__item__text__info__left_9">
+                                    <img src="../img/icon/people.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+                </div>   
+            </div>
+            <div class="listing_list">
+                <div class="gift-list" id="gift-list_10">
+                    <div class="listing__item">
+                        <div class="listing__item__pic" id="listing__item__pic_10">
+                            <div class="listing__item__pic__tag">Full Moon</div> 
+                        </div>
+                        <div class="listing__item__text">
+                            <div class="listing__item__text__inside" id="listing__item__text__inside_10">
+                                <div class="listing__item__text__rating" id="listing__item__text__rating_10">
+                                </div>
+                            </div>
+                            <div class="listing__item__text__info">
+                                <div class="listing__item__text__info__left" id="listing__item__text__info__left_10">
+                                    <img src="../img/icon/people.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+                <div class="gift-list" id="gift-list_11">
+                    <div class="listing__item">
+                        <div class="listing__item__pic" id="listing__item__pic_11">
+                            <div class="listing__item__pic__tag">Full Moon</div> 
+                        </div>
+                        <div class="listing__item__text">
+                            <div class="listing__item__text__inside" id="listing__item__text__inside_11">
+                                <div class="listing__item__text__rating" id="listing__item__text__rating_11">
+                                </div>
+                            </div>
+                            <div class="listing__item__text__info">
+                                <div class="listing__item__text__info__left" id="listing__item__text__info__left_11">
+                                    <img src="../img/icon/people.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+                </div>   
+            </div>
+            
+    </section>
+    <!-- Listing Section End -->
+</div>
+
+<!-- filter js-->
+<script>
+    var num = 0;
+    var gift_list = [
+        {item:'奶瓶', gender:'不限', budget:'801~1000', img: '../img/full_month/bottle.jpg'},
+        {item:'夜燈', gender:'不限', budget:'601~800', img:'../img/full_month/light.jpg'},
+        {item:'學步車', gender:'不限', budget:'1501~2000', img:'../img/full_month/babywalker.jpg'},
+        {item:'尿布', gender:'不限', budget:'601~800', img:'../img/full_month/diaper.jpg'},
+        {item:'奶粉', gender:'不限', budget:'601~800', img:'../img/full_month/milk-powder.jpg'},
+        {item:'圍兜', gender:'不限', budget:'401~600', img:'../img/full_month/bibs.jpg'},
+        {item:'奶嘴', gender:'不限', budget:'200以下', img:'../img/full_month/dummy.jpg'},
+        {item:'固齒器', gender:'不限', budget:'201~400', img:'../img/full_month/toys.jpg'},
+        {item:'嬰兒裝', gender:'不限', budget:'601~800', img:'../img/full_month/baby-clothes.jpg'},
+        {item:'夜燈', gender:'不限', budget:'601~800', img:'../img/full_month/light.jpg'},
+        {item:'手作蛋糕', gender:'不限', budget:'601~800', img: '../img/anniversary/cake.jpg'},
+        {item:'餐椅', gender:'不限', budget:'1001~1500', img:'../img/full_month/chair.jpg'},
+        ];
+    //傳入預設
+    operation(2);
+
+    function operation(x){ 
+        if(x===1){
+            remove();
+            processFromData();
+        }
+        else{
+            filter_gift('');
+            return;
+        }  
+    }
+
+   //匯入篩選條件
+    function processFromData(){
+        var budget = document.getElementById('budget').value;
+        filter_gift(budget);
+    }
+
+    //輸出function
+    function print_to_browser(obj){
+        for(let i = 0; i < obj.length; i++){
+            var parent1 = document.getElementById('listing__item__text__inside_'+i);
+            var parent2 = document.getElementById('listing__item__text__info__left_'+i);
+            var parent3 = document.getElementById('listing__item__text__rating_'+i);
+            var h1 = document.createElement('h1');
+            var span = document.createElement('span');
+            var h3 = document.createElement('h3');
+            var img = document.createElement('img');
+            h1.innerHTML = obj[i].item;
+            span.innerHTML = obj[i].gender;
+            h3.innerHTML = obj[i].budget;
+            img.setAttribute('src', obj[i].img);
+            parent1.appendChild(h1);
+            parent2.appendChild(span);
+            parent3.appendChild(h3);
+            document.getElementById('listing__item__pic_'+i).appendChild(img);
+            num = i;
+        }
+    }
+
+    //清除商品頁
+    function remove(){
+        for(var i = 0; i <= num; i++){
+            var parent1 = document.getElementById('listing__item__text__inside_'+i);
+            var parent2 = document.getElementById('listing__item__text__info__left_'+i);
+            var parent3 = document.getElementById('listing__item__text__rating_'+i);
+            var parent4 = document.getElementById('listing__item__pic_'+i);
+            parent1.removeChild(parent1.lastChild);
+            parent2.removeChild(parent2.lastChild);
+            parent3.removeChild(parent3.lastChild);
+            parent4.removeChild(parent4.lastChild);
+        }
+    }
+
+    //filter function
+    function filter_gift(budget){
+        var filterResult = gift_list.filter(function(gift){
+            if(budget === '')
+                return gift;
+            else{
+                if(gift.budget === budget)
+                    return gift;
+            } 
+        });
+        print_to_browser(filterResult);
+    }
+</script>
+<!-- Js Plugins -->
+<script src="../js/giftday_js/jquery-3.3.1.min.js"></script>
+<script src="../js/giftday_js/bootstrap.min.js"></script>
+<script src="../js/giftday_js/jquery.nice-select.min.js"></script>
+<script src="../js/giftday_js/jquery-ui.min.js"></script>
+<script src="../js/giftday_js/jquery.magnific-popup.min.js"></script>
+<script src="../js/giftday_js/jquery.slicknav.js"></script>
+<script src="../js/giftday_js/owl.carousel.min.js"></script>
+<script src="../js/giftday_js/main.js"></script>
+</body>
+
+</html>
