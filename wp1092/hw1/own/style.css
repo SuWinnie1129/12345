@@ -1,4 +1,4 @@
-.background {
+.container {
     background-color: #92a8d1ab;
     display: flex;
     align-items: center;
@@ -13,6 +13,24 @@
     padding: 1.5%;
     background-color: white;
     box-shadow: 3px 3px 6px rgba(179, 178, 178, 0.753);
+}
+
+@media(max-width: 920px) {
+    .frame {
+        width: 40%;
+    }
+}
+
+@media(max-width: 768px) {
+    .frame {
+        width: 50%;
+    }
+}
+
+@media(max-width: 540px) {
+    .frame {
+        width: 70%;
+    }
 }
 
 .header {
@@ -69,9 +87,10 @@ img:hover {
 }
 
 .timeline {
-    width: 100%;
+    width: 90%;
     display: inline-block;
     padding: 5%;
+    overflow: hidden;
 }
 
 .timeline .rectangle1 {
@@ -100,12 +119,30 @@ img:hover {
     text-align: right;
 }
 
+@media(max-width: 920px) {
+    .timeline .rectangle1 {
+        width: 35%;
+    }
+}
+
+@media(max-width: 768px) {
+    .timeline .rectangle1 {
+        width: 43%;
+    }
+}
+
+@media(max-width: 540px) {
+    .timeline .rectangle1 {
+        width: 60%;
+    }
+}
+
 .button {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: -10%;
-    margin-left: 5%;
+    margin-left: 7%;
 }
 
 .btn {
