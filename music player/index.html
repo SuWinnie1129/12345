@@ -11,30 +11,44 @@
 </head>
 <body>
     <div class="background">
-        <div class="container">
-            <div class="container_file" id="container_file">
-                <p>Before 實驗：請先選擇歌單csv檔案</p>
-                <input type="file" id="input" accept=".csv" onchange="load_playlist(this.files)">
+        <div class="container" id="container">
+            <div id="song_evaluation">
+                <div class="container_file" id="container_file">
+                    <p>Before 實驗：請先選擇歌單csv檔案</p>
+                    <input type="file" id="input" accept=".csv" onchange="load_playlist(this.files)">
+                </div>
+                <div class="container_info" id="container_info">
+                <!--  <div class="box" id="box"></div> -->
+                    <div class="range_slider" id="range_slider">
+                        <p>喜歡的程度:</p>
+                        0.0<input type="range" min="0.0" max="10.0" value="5.0" step="0.1" class="slider" id="myRange">10.0
+                        <p>Value: <span id="output"></span></p>
+                    </div>
+                </div>
+                <div class="container_controller">
+                    <div class="timeline_container" id="timeline_container">
+                        <div class="timeline_progress" id="timeline_progress"></div>
+                    </div> 
+                    <h1 id="cur_time"></h1>
+                    <audio src="" id="audio"></audio>
+                    <div class="btn_controller">
+                        <button class="btn" id="play_btn"><i class="fa fa-play-circle" aria-hidden="true"></i></button>
+                        <button class="btn" id="pause_btn"><i class="fa fa-pause-circle" aria-hidden="true"></i></button>
+                        <button class="btn" id="next_btn"><i class="fa fa-step-forward" aria-hidden="true"></i></button>
+                    </div>
+                </div>
             </div>
-            <div class="container_info" id="container_info">
-              <!--  <div class="box" id="box"></div> -->
+            <div id="overall_evaluation">
+                <p>請問您對今天整份歌單的滿意度為何?</p>
                 <div class="range_slider" id="range_slider">
                     <p>喜歡的程度:</p>
-                    <input type="range" min="0.0" max="10.0" value="5.0" step="0.1" class="slider" id="myRange">
+                    0.0<input type="range" min="0.0" max="10.0" value="5.0" step="0.1" class="slider" id="myRange">10.0
                     <p>Value: <span id="output"></span></p>
                 </div>
+                <button class="submit" id="submit">提交</button>
             </div>
-            <div class="container_controller">
-                <div class="timeline_container" id="timeline_container">
-                    <div class="timeline_progress" id="timeline_progress"></div>
-                </div> 
-                <h1 id="cur_time"></h1>
-                <audio src="" id="audio"></audio>
-                <div class="btn_controller">
-                    <button class="btn" id="play_btn"><i class="fa fa-play-circle" aria-hidden="true"></i></button>
-                    <button class="btn" id="pause_btn"><i class="fa fa-pause-circle" aria-hidden="true"></i></button>
-                    <button class="btn" id="next_btn"><i class="fa fa-step-forward" aria-hidden="true"></i></button>
-                </div>
+            <div id="ending">
+                <p>感謝您今天的參與與配合!</p>
             </div>
         </div>
     </div>

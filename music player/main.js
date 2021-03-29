@@ -8,11 +8,16 @@ const progressContainer = document.getElementById("timeline_container");
 const cur_time = document.getElementById("cur_time");
 const slider = document.getElementById("myRange");
 const output = document.getElementById("output");
+const submit_btn = document.getElementById("submit");
 
 //to do
 pause_btn.style.display = "none";
+document.getElementById("song_evaluation").hidden = false;
+document.getElementById("overall_evaluation").hidden = true;
+document.getElementById("ending").hidden = true;
+
 var playlist = new Array(25);
-var scores = new Array(25);
+var scores = new Array(26);
 let i = 0;
 
 //read file
@@ -99,8 +104,9 @@ function next_click(){
   //change to next song
   i++;
   if(i === 25){
-    next_btn.disabled = true;
-    exp_finish();
+    document.getElementById("song_evaluation").hidden = true;
+    document.getElementById("overall_evaluation").hidden = false;
+    document.getElementById("ending").hidden = true;
   }
   else{
     load_song(playlist[i]);
@@ -109,7 +115,12 @@ function next_click(){
 }
 
 //finish 25 songs
+submit_btn.addEventListener('click', exp_finish);
+
 function exp_finish(){
+  scores[i] = slider.value;
+  document.getElementById("overall_evaluation").hidden = true;
+  document.getElementById("ending").hidden = false;
   console.log(this.scores);
   //寫檔
   let csv_Content = "data:text/csv;charset=utf-8,";
