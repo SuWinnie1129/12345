@@ -8,6 +8,8 @@ const progressContainer = document.getElementById("timeline_container");
 const cur_time = document.getElementById("cur_time");
 const slider = document.getElementById("myRange");
 const output = document.getElementById("output");
+const slider2 = document.getElementById("myRange2");
+const score = document.getElementById("score");
 const submit_btn = document.getElementById("submit");
 
 //to do
@@ -101,9 +103,11 @@ next_btn.addEventListener('click', next_click);
 function next_click(){
   //range slider score into array
   scores[i] = slider.value;
+  console.log(score[i]);
   //change to next song
   i++;
   if(i === 25){
+    audio.remove();
     document.getElementById("song_evaluation").hidden = true;
     document.getElementById("overall_evaluation").hidden = false;
     document.getElementById("ending").hidden = true;
@@ -118,7 +122,7 @@ function next_click(){
 submit_btn.addEventListener('click', exp_finish);
 
 function exp_finish(){
-  scores[i] = slider.value;
+  scores[i] = slider2.value;
   document.getElementById("overall_evaluation").hidden = true;
   document.getElementById("ending").hidden = false;
   console.log(this.scores);
@@ -135,8 +139,15 @@ function exp_finish(){
   link.click();
 }
 
-//range slider
+//range slider1
 output.innerHTML = slider.value;
 slider.oninput = function() {
+  console.log(this.value);
   output.innerHTML = this.value;
+}
+
+//range slider2
+score.innerHTML = slider2.value;
+slider2.oninput = function() {
+  score.innerHTML = this.value;
 }
