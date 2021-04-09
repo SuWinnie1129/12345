@@ -104,7 +104,10 @@ next_btn.addEventListener('click', next_click);
 function next_click(){
   //range slider score into array
   scores[i] = slider.value;
-  console.log(score[i]);
+  console.log(slider.value);
+  slider.value = 5;
+  output.innerHTML = 5;
+
   //change to next song
   i++;
   if(i === 20){
@@ -126,7 +129,7 @@ function exp_finish(){
   scores[i] = slider2.value;
   document.getElementById("overall_evaluation").hidden = true;
   document.getElementById("ending").hidden = false;
-  console.log(this.scores);
+  console.log(slider2.value);
   //寫檔
   let csv_Content = "data:text/csv;charset=utf-8,";
   scores.forEach(function(score){
@@ -143,7 +146,6 @@ function exp_finish(){
 //range slider1
 output.innerHTML = slider.value;
 slider.oninput = function() {
-  console.log(this.value);
   output.innerHTML = this.value;
 }
 
