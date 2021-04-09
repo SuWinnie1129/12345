@@ -41,6 +41,7 @@ document.getElementById('input').onchange = function(){
 //load_song(index);
 function load_song(song){
   audio.src = `./playlist/${song}.mp3`;
+  document.getElementById("num").innerHTML = i+1;
 }
 
 //time update
