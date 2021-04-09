@@ -107,7 +107,7 @@ function next_click(){
   console.log(score[i]);
   //change to next song
   i++;
-  if(i === 25){
+  if(i === 20){
     audio.remove();
     document.getElementById("song_evaluation").hidden = true;
     document.getElementById("overall_evaluation").hidden = false;
@@ -119,7 +119,7 @@ function next_click(){
   }
 }
 
-//finish 25 songs
+//finish 20 songs
 submit_btn.addEventListener('click', exp_finish);
 
 function exp_finish(){
