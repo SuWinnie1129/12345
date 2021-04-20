@@ -10,6 +10,8 @@ const slider = document.getElementById("myRange");
 const output = document.getElementById("output");
 const slider2 = document.getElementById("myRange2");
 const score = document.getElementById("score");
+const slider3 = document.getElementById("myRange3");
+const familiarty = document.getElementById("familiarty");
 const submit_btn = document.getElementById("submit");
 
 //to do
@@ -18,8 +20,9 @@ document.getElementById("song_evaluation").hidden = false;
 document.getElementById("overall_evaluation").hidden = true;
 document.getElementById("ending").hidden = true;
 
-var playlist = new Array(25);
-var scores = new Array(26);
+var playlist = new Array(20);
+var scores = new Array(21);
+var familiarties = new Array(20);
 let i = 0;
 
 //read file
@@ -105,8 +108,14 @@ function next_click(){
   //range slider score into array
   scores[i] = slider.value;
   console.log(slider.value);
+  
+  familiarties[i] = slider3.value;
+  console.log(slider3.value);
+  
   slider.value = 5;
   output.innerHTML = 5;
+  slider3.value = 3;
+  familiarty.innerHTML = 3;
 
   //change to next song
   i++;
@@ -135,6 +144,9 @@ function exp_finish(){
   scores.forEach(function(score){
     csv_Content += score + "\r\n";
   });
+  familiarties.forEach(function(score){
+    csv_Content += score + "\r\n";
+  });
   var encodeUri = encodeURI(csv_Content);
   var link = document.createElement("a");
   link.setAttribute("href", encodeUri);
@@ -153,4 +165,10 @@ slider.oninput = function() {
 score.innerHTML = slider2.value;
 slider2.oninput = function() {
   score.innerHTML = this.value;
+}
+
+//range slider3
+familiarty.innerHTML = slider3.value;
+slider3.oninput = function() {
+  familiarty.innerHTML = this.value;
 }
