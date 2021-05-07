@@ -2464,7 +2464,6 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   margin: 10% 20%;
-  
   color: #fff;
   background-color: #64a19d;
   border-color: #64a19d;
@@ -2492,6 +2491,10 @@ fieldset:disabled a.btn {
 }
 .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-primary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(123, 175, 172, 0.5);
+}
+.btn-primary span{
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .btn-secondary {
@@ -10020,7 +10023,7 @@ a.text-black:hover, a.text-black:focus {
 }
 
 .text-white-50 {
-  color: rgba(255, 255, 255, 0.5) !important;
+  color: rgba(255, 255, 255, 0.75) !important;
 }
 
 .text-hide {
@@ -10241,7 +10244,7 @@ body {
   max-height: 35rem;
   overflow: hidden;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000000 100%), url("../assets/img/hero_image.png");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000000 100%), url("../assets/img/museum-image.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -10249,10 +10252,11 @@ body {
 }
 .masthead h1 {
   font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 1.5rem;
-  line-height: 1.5rem;
+  font-size: 3rem;
+  font-weight: bolder;
+  line-height: 8rem;
   letter-spacing: 0.8rem;
-  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+  background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.6));
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
           background-clip: text;
@@ -10260,10 +10264,12 @@ body {
 .masthead h2 {
   max-width: 20rem;
   font-size: 1rem;
+  line-height: 2rem;
 }
 .masthead .topic_area{
   display: inline-flex;
-  padding: 8%;
+  align-items: center;
+  justify-content: center;
 }
 
 .masthead h3{
@@ -10281,28 +10287,38 @@ body {
   margin: 10% 5%;
   font-size: 1.5rem;
   color: black;
-  font-weight: bold;
-  
+  font-weight: bold; 
+  box-shadow: inset 0 -10px 10px 0 black,
 }
+
 .masthead .btn_yellow{
   background-color: #fff171;
   border-color: #fff171;
   opacity: 0.9;
+}
+.masthead .btn_yellow:hover{
+  outline: 0;
+  background-color: #fde82b;
+  transform: scale(1.1);
 }
 .masthead .btn_green{
   background-color: #64a19d;
   border-color: #64a19d;
   opacity: 0.9;
 }
-
+.masthead .btn_green:hover{
+  outline: 0;
+  background-color: #448f8a;
+  transform: scale(1.1);
+}
 @media (min-width: 576px) {
   .masthead h1 {
-    font-size: 1.5rem;
-    line-height: 1.5rem;
+    font-size: 2.5rem;
+    line-height: 2.75rem;
   }
   .topic-btn{
-    width: 17rem;
-    height: 17rem;
+    width: 15rem;
+    height: 15rem;
     font-size: 1rem;
   }
   .masthead p{
@@ -10312,18 +10328,18 @@ body {
 }
 @media (min-width: 768px) {
   .masthead h1 {
-    font-size: 2rem;
-    line-height: 2rem;
+    font-size: 2.75rem;
+    line-height: 3rem;
   }
 }
 @media (min-width: 992px) {
   .masthead {
     height: 100vh;
-    padding: 0;
+    padding: 15%;
   }
   .masthead h1 {
-    font-size: 6.5rem;
-    line-height: 6.5rem;
+    font-size: 3rem;
+    line-height: 4rem;
     letter-spacing: 0.8rem;
   }
   .masthead h2 {
@@ -10331,8 +10347,8 @@ body {
     font-size: 1.25rem;
   }
   .topic-btn{
-    width: 23rem;
-    height: 23rem;
+    width: 20rem;
+    height: 20rem;
     font-size: 2rem;
   }
 
