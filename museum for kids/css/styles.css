@@ -9937,14 +9937,6 @@ a.text-black:focus {
   color: rgba(255, 255, 255, 0.75) !important;
 }
 
-.text-hide {
-  font: 0/0 a;
-  color: transparent;
-  text-shadow: none;
-  background-color: transparent;
-  border: 0;
-}
-
 .text-decoration-none {
   text-decoration: none !important;
 }
@@ -9978,29 +9970,6 @@ a.text-black:focus {
     text-decoration: underline;
   }
 
-  abbr[title]::after {
-    content: " (" attr(title) ")";
-  }
-
-  pre {
-    white-space: pre-wrap !important;
-  }
-
-  pre,
-  blockquote {
-    border: 1px solid #adb5bd;
-    page-break-inside: avoid;
-  }
-
-  thead {
-    display: table-header-group;
-  }
-
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
-
   p,
   h2,
   h3 {
@@ -10026,38 +9995,6 @@ a.text-black:focus {
 
   .navbar {
     display: none;
-  }
-
-  .badge {
-    border: 1px solid #000000;
-  }
-
-  .table {
-    border-collapse: collapse !important;
-  }
-  .table td,
-  .table th {
-    background-color: #fff !important;
-  }
-
-  .table-bordered th,
-  .table-bordered td {
-    border: 1px solid #dee2e6 !important;
-  }
-
-  .table-dark {
-    color: inherit;
-  }
-  .table-dark th,
-  .table-dark td,
-  .table-dark thead th,
-  .table-dark tbody + tbody {
-    border-color: #dee2e6;
-  }
-
-  .table .thead-dark th {
-    color: inherit;
-    border-color: #dee2e6;
   }
 }
 body {
@@ -10152,8 +10089,9 @@ body {
 .masthead {
   position: relative;
   width: 100%;
-  height: 100%;
-  max-height: 35rem;
+  height: auto;
+  /*max-height: 35rem;*/
+  /*overflow: hidden;*/
   padding: 5rem 0;
   background: linear-gradient(
       to bottom,
@@ -10329,18 +10267,11 @@ body {
   }
 }
 
-.collection_img {
-  position: relative;
-  width: 100%;
-  height: auto;
-  max-height: 32rem;
-  overflow: hidden;
-}
-
 .footer {
   padding: 1.5rem 0;
 }
 
+/* history.html animation */
 .slider_container {
   margin: 30px auto;
   width: 700px;
@@ -10349,7 +10280,6 @@ body {
   border: 20px solid;    
   border-color: #6bcec7;
   border-bottom-width: 100px;
-  /*background-color: #f5f5f5;*/
   background-color: #6bcec7;
   box-shadow: #666 0 0 5px;
   /*overflow: hidden;*/
@@ -10376,42 +10306,42 @@ body {
 }
 
 .slider_container div {
-  -webkit-animation: round 28s linear infinite;
-          animation: round 28s linear infinite;
+  -webkit-animation: round 32.5s linear infinite;
+          animation: round 32.5s linear infinite;
 }
 
 @-webkit-keyframes round {
-  4% {
+  0.5% {
       opacity: 1;
       filter: alpha(opacity=100);
-      /* 0 - 1秒 淡入*/
+      /*淡入*/
   }
-  20% {
+  20.5% {
       opacity: 1;
       filter: alpha(opacity=100);
-      /* 1- 5秒靜止*/
+      /*靜止*/
   }
-  24% {
+  21% {
       opacity: 0;
       filter: alpha(opacity=0);
-      /* 5-6秒淡出*/
+      /*淡出*/
   }
 }
 @keyframes round {
-  4% {
+  0.5% {
       opacity: 1;
       filter: alpha(opacity=100);
-      /* 0 - 1秒 淡入*/
+      /* 淡入*/
   }
-  20% {
+  20.5% {
       opacity: 1;
       filter: alpha(opacity=100);
-      /* 1- 5秒靜止*/
+      /* 靜止*/
   }
-  24% {
+  21% {
       opacity: 0;
       filter: alpha(opacity=0);
-      /* 5-6秒淡出*/
+      /* 淡出*/
   }
 }
 .slider_container div:nth-child(1) {
@@ -10420,33 +10350,35 @@ body {
 }
 
 .slider_container div:nth-child(2) {
-  -webkit-animation-delay: 5s;
-          animation-delay: 5s;
+  -webkit-animation-delay: 6.5s;
+          animation-delay: 6.5s;
 }
 
 .slider_container div:nth-child(3) {
-  -webkit-animation-delay: 10s;
-          animation-delay: 10s;
+  -webkit-animation-delay: 13s;
+          animation-delay: 13s;
 }
+
 .slider_container div:nth-child(4) {
-  -webkit-animation-delay: 15s;
-          animation-delay: 15s;
+  -webkit-animation-delay: 19.5s;
+          animation-delay: 19.5s;
 }
+
 .slider_container div:nth-child(5) {
-  -webkit-animation-delay: 21.5s;
-          animation-delay: 21.5s;
+  -webkit-animation-delay: 26s;
+          animation-delay: 26s;
 }
 
 .slider_container span {    
   font-family: 'Noto Sans SC', sans-serif;
   color: black;
   background: rgba(255, 255, 255, 0.863);
- /* background-color: #fff171a8;*/
   position: absolute;
   left: 0%;
   top: 85%;
   width: 90%;
   height: auto;
+  padding-left: 1%;
   font-size: 16px;
   text-align: left;
   line-height: 20px;
@@ -10504,40 +10436,41 @@ body {
 
 }
 
+/* science.html animation */
 .slider_container2 div {
-  -webkit-animation: round 40s linear infinite;
-          animation: round 40s linear infinite;
+  -webkit-animation: round 32s linear infinite;
+          animation: round 32s linear infinite;
 }
 
 @-webkit-keyframes round {
-  4% {
+  1.5% {
       opacity: 1;
       filter: alpha(opacity=100);
-      /* 0 - 1秒 淡入*/
+      /* 0 - 0.5秒 淡入*/
   }
-  20% {
+  9.9% {
       opacity: 1;
       filter: alpha(opacity=100);
-      /* 1- 5秒靜止*/
+      /* 0.5- 3秒靜止*/
   }
-  24% {
+  13.2% {
       opacity: 0;
       filter: alpha(opacity=0);
-      /* 5-6秒淡出*/
+      /* 4-5秒淡出*/
   }
 }
 @keyframes round {
-  4% {
+  1.5% {
       opacity: 1;
       filter: alpha(opacity=100);
-      /* 0 - 1秒 淡入*/
+      /* 0 - 0.5秒 淡入*/
   }
-  20% {
+  9.9% {
       opacity: 1;
       filter: alpha(opacity=100);
       /* 1- 5秒靜止*/
   }
-  24% {
+  13.2% {
       opacity: 0;
       filter: alpha(opacity=0);
       /* 5-6秒淡出*/
@@ -10549,36 +10482,36 @@ body {
 }
 
 .slider_container2 div:nth-child(2) {
-  -webkit-animation-delay: 5s;
-          animation-delay: 5s;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
 }
 
 .slider_container2 div:nth-child(3) {
-  -webkit-animation-delay: 10s;
-          animation-delay: 10s;
+  -webkit-animation-delay: 8s;
+          animation-delay: 8s;
 }
 
 .slider_container2 div:nth-child(4) {
-  -webkit-animation-delay: 15s;
-          animation-delay: 15s;
+  -webkit-animation-delay: 12s;
+          animation-delay: 12s;
 }
 
 .slider_container2 div:nth-child(5) {
-  -webkit-animation-delay: 20s;
-          animation-delay: 20s;
+  -webkit-animation-delay: 16s;
+          animation-delay: 16s;
 }
 
 .slider_container2 div:nth-child(6) {
-  -webkit-animation-delay: 25s;
-          animation-delay: 25s;
+  -webkit-animation-delay: 20s;
+          animation-delay: 20s;
 }
 .slider_container2 div:nth-child(7) {
-  -webkit-animation-delay: 30s;
-          animation-delay: 30s;
+  -webkit-animation-delay: 24s;
+          animation-delay: 24s;
 }
 .slider_container2 div:nth-child(8) {
-  -webkit-animation-delay: 35s;
-          animation-delay: 35s;
+  -webkit-animation-delay: 28s;
+          animation-delay: 28s;
 }
 
 .slider_container2 span {    
@@ -10587,6 +10520,7 @@ body {
   background: rgba(255, 255, 255, 0.863);
  /* background-color: #fff171a8;*/
   position: absolute;
+  padding-left: 1%;
   left: 0%;
   top: 85%;
   width: 90%;
