@@ -10101,9 +10101,9 @@ body {
   position: relative;
   width: 100%;
   /*height: 100%;*/
-  height: 90vh;
+  height: 95vh;
   overflow: hidden;
-  padding: 5rem 0;
+  padding: 5vh 0;
   background: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0.3) 0%,
@@ -10148,11 +10148,11 @@ body {
   margin-top: 1.5rem;
 }
 .masthead .topic-btn {
-  width: 20rem;
-  height: 20rem;
+  width: 50vh;
+  height: 50vh;
   border-radius: 50%;
   margin: 10% 3%;
-  font-size: 1.5rem;
+  font-size: 4vh;
   color: black;
   font-weight: bold;
   box-shadow: inset 0 -10px 10px 0 black;
@@ -10195,11 +10195,6 @@ body {
     font-size: 2.5rem;
     line-height: 2.75rem;
   }
-  .topic-btn {
-    width: 15rem;
-    height: 15rem;
-    font-size: 1rem;
-  }
   .masthead p {
     font-size: 13rem;
   }
@@ -10212,7 +10207,7 @@ body {
 }
 @media (min-width: 992px) {
   .masthead {
-    height: 90vh;
+    height: 95vh;
     padding: 15%;
   }
   .masthead h1 {
@@ -10234,7 +10229,7 @@ body {
 .masthead-pic2 {
   position: relative;
   width: 100%;
-  height: 90vh;
+  height: 95vh;
   /*max-height: 35rem;*/
   overflow: hidden;
   padding: 5rem 0;
@@ -10286,8 +10281,9 @@ body {
 /* history.html animation */
 .slider_container {
   margin: 30px auto;
-  width: 700px;
-  height: 480px;
+  /*width: 700px;*/
+  width: 105vh;
+  height: 80vh;
   position: relative;
   border: 20px solid;    
   border-color: #6bcec7;
@@ -10417,8 +10413,8 @@ body {
 
 .slider_container2 {
   margin: 30px auto;
-  width: 700px;
-  height: 480px;
+  width: 105vh;
+  height: 80vh;
   position: relative;
   border: 20px solid;    
   border-color: #fff171d3;
