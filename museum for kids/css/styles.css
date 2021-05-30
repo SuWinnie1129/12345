@@ -10298,7 +10298,7 @@ body {
 .slider_container img{
   max-width: 100vh;
   max-height: 80vh;
-  margin-left: 2vh;
+  /*margin-left: 2vh;*/
 }
 
 .slider_container div {
@@ -10430,7 +10430,7 @@ body {
 .slider_container2 img{
   max-width: 100vh;
   max-height: 80vh;
-  margin-left: 2vh;
+  /*margin-left: 2vh;*/
 }
 
 .slider_container2 div {
